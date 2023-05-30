@@ -1,0 +1,1 @@
+var posts=["posts/210129-Hello-World/","posts/210326-Minecraft-Memories/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
