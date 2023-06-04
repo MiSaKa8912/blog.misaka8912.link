@@ -2936,7 +2936,7 @@ figure.highlight pre .javascript .function {
 }
 .collect .collect-list .collect_box .collect_content {
   z-index: 1;
-  margin-top: 86%;
+  margin-top: 90%;
 }
 .collect .collect-list .collect_box .collect_content span {
   display: block;
@@ -2946,6 +2946,12 @@ figure.highlight pre .javascript .function {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+.collect .collect-list .collect_box .collect_content .collect_time span {
+  font-size: 16px;
+  font-weight: normal;
 }
 [data-theme='dark'] .collect .collect-list .collect_box {
   color: #ddd !important;
