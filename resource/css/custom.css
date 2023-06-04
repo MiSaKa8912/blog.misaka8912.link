@@ -1,0 +1,6 @@
+/* 自定义字体 */
+@font-face {
+    font-family: '站酷快乐体';
+    font-display: swap;
+    src: url('/resource/fonts/站酷快乐体.TTF') format("truetype");  
+}

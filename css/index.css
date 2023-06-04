@@ -14716,6 +14716,7 @@ body[data-type="about"] #web_bg {
 }
 .author-content-item.myphoto img {
   position: absolute;
+  margin-top: 8rem;
   min-width: 100%;
   object-fit: cover;
   transition: 0.6s;
@@ -18150,7 +18151,7 @@ body[data-type="essay"] #web_bg {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 #bber .bber-bottom .bber-reply {
@@ -18163,7 +18164,7 @@ body[data-type="essay"] #web_bg {
 
 #bber .bber-content-link {
   display: flex;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
   font-size: 0.7rem;
   align-items: center;
   background-color: rgba(245, 108, 108, 0.13);
