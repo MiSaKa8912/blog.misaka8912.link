@@ -5918,13 +5918,13 @@ h1.page-title + .tag-cloud-list {
   left: 50%;
   top: 40%;
   margin-left: -53.5px;
-  margin-top: 10px;
+  margin-top: 9px;
   background: var(--anzhiyu-white-op);
   color: var(--font-color);
   border: var(--style-border);
   font-size: 12px;
   padding: 0px 8px;
-  border-radius: 12px;
+  border-radius: 20px;
   width: fit-content;
   display: inline;
 }
@@ -5933,7 +5933,7 @@ h1.page-title + .tag-cloud-list {
   margin: 0 0 10px 0;
 }
 #aside-content > .card-widget.card-info .banner-button-group .banner-button {
-  border-radius: 12px;
+  border-radius: 35px;
   background: var(--anzhiyu-theme);
 }
 #aside-content > .card-widget.card-info .banner-button-group .banner-button:hover {
