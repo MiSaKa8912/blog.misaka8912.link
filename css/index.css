@@ -5825,7 +5825,7 @@ h1.page-title + .tag-cloud-list {
 }
 .avatar-img {
   overflow: hidden;
-  margin: 0 auto;
+  margin: -10px auto 10px auto;
   width: 110px;
   height: 110px;
   border-radius: 70px;
@@ -5908,21 +5908,29 @@ h1.page-title + .tag-cloud-list {
   position: relative;
 }
 #aside-content > .card-widget.card-info .author-info__name {
+  text-align: center;
   line-height: 1.5em;
-  margin: 4px 0;
+  margin: 35px 0 0 0;
 }
 #aside-content > .card-widget.card-info #author-info__sayhi {
-  text-align: left;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 40%;
+  margin-left: -53.5px;
+  margin-top: 10px;
   background: var(--anzhiyu-white-op);
   color: var(--font-color);
   border: var(--style-border);
   font-size: 12px;
-  margin-right: auto;
-  padding: 5px 8px;
+  padding: 0px 8px;
   border-radius: 12px;
   width: fit-content;
   display: inline;
-  margin-left: -1px;
+}
+#aside-content > .card-widget.card-info .author-info__description {
+  text-align: center;
+  margin: 0 0 10px 0;
 }
 #aside-content > .card-widget.card-info .banner-button-group .banner-button {
   border-radius: 12px;
@@ -5979,8 +5987,14 @@ h1.page-title + .tag-cloud-list {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.card-widget.card-info .banner-button-group .button.left,
+.button.right {
+  font-size: 1.2rem;
+  margin-top: 1.1px;
+}
 .card-widget.card-info .banner-button-group .banner-button-text {
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .card-info-avatar .avatar-img {
   width: 100px;
@@ -9602,6 +9616,11 @@ blockquote {
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  #post .tag_share {
+    margin-bottom: 12px !important;
+  }
+}
 #post .tag_share .post-meta__box {
   display: -webkit-box;
   display: -moz-box;
@@ -9666,7 +9685,7 @@ blockquote {
 @media screen and (max-width: 768px) {
   #post .tag_share .post-meta__box__tags,
   #post .tag_share .post-meta__box__categoryes {
-    margin: 4px 8px 4px 0 !important;
+    margin: 16px 8px 4px 0 !important;
   }
 }
 #post .tag_share .post-meta__box__tags {
@@ -9756,7 +9775,7 @@ blockquote {
 #post .post-copyright .anzhiyufont.anzhiyu-icon-copyright {
   position: absolute;
   font-size: 1.3em;
-  top: -71px;
+  top: -73px;
   right: -20px;
   font-size: 8.3em;
   z-index: -1;
@@ -9810,6 +9829,9 @@ blockquote {
   -webkit-align-items: center;
   align-items: center;
 }
+#post .post-copyright .post-copyright__type .post-copyright-meta {
+  margin-right: 0.2rem;
+}
 #post .post-copyright .post-copyright__type .copy-button {
   background: var(--anzhiyu-card-bg);
   border: var(--style-border);
@@ -9824,6 +9846,7 @@ blockquote {
   width: 38px;
   height: 28px;
   margin-left: 8px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -14716,7 +14739,6 @@ body[data-type="about"] #web_bg {
 }
 .author-content-item.myphoto img {
   position: absolute;
-  margin-top: 8rem;
   min-width: 100%;
   object-fit: cover;
   transition: 0.6s;
