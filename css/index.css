@@ -2833,6 +2833,9 @@ figure.highlight pre .javascript .function {
   margin: 6px 0;
   padding: 0.12em 0.4em 0.12em 1.4em;
 }
+body[data-type="collect"] #page .page-title {
+  display: none;
+}
 .collect h2 {
   margin-bottom: 0;
 }
@@ -5957,11 +5960,8 @@ h1.page-title + .tag-cloud-list {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-}
-@media screen and (max-width: 768px) {
-  .card-widget .author-info-top {
-    display: none;
-  }
+/* +maxWidth768()
+    display: none */
 }
 .card-widget .card-info-avatar {
   display: inline-block;
@@ -14712,7 +14712,7 @@ body[data-type="about"] #web_bg {
 /* 人格box的图片位置 */
 .author-content-item.personalities .image {
   position: absolute;
-  right: 30px;
+  right: 0px;
   top: 10px;
   width: 220px;
   transition: transform 2s cubic-bezier(0.13, 0.45, 0.21, 1.02);
@@ -15095,16 +15095,20 @@ body[data-type="about"] #web_bg {
 
 /* ================================ 900px =============================== */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
   /* 人格box的图片位置 */
   .author-content-item.personalities .image {
+    display: none;
+    /*
     width: 160px;
     top: 20px;
+    */
   }
-  /* 当指针移动到人格box上时图片的位置 */
+  /* 当指针移动到人格box上时图片的位置 
   .author-content-item.personalities:hover .image {
     transform: rotateY(180deg) rotate(5deg) scale(1.5, 1.5) translate(-15px, 30px);
   }
+  */
 }
 
 
@@ -15177,6 +15181,7 @@ body[data-type="about"] #web_bg {
 
   /* 人格box的图片位置 */
   .author-content-item.personalities .image {
+    display: block;
     width: 150px;
     top: 25px;
     right: 5px;
@@ -15247,6 +15252,16 @@ body[data-type="about"] #web_bg {
     transition: 3s ease-in-out;
     background-position-y: center;
     background-position-x: center;
+  }
+}
+
+
+
+@media screen and (max-width: 370px){
+
+  /* 人格box的图片位置 */
+  .author-content-item.personalities .image {
+    display: none;
   }
 }
 
@@ -15951,8 +15966,12 @@ body[data-type="album"] #page {
   box-shadow: none !important;
   padding: 0 !important;
   background: 0 0 !important;
+  
 }
 body[data-type="album"] #page .page-title {
+  display: none;
+}
+body[data-type="gallery"] #page .page-title {
   display: none;
 }
 
