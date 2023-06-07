@@ -15783,7 +15783,7 @@ body[data-type="album_detail"] #page .page-title {
   cursor: default;
   display: flex;
   align-items: center;
-  height: 35px;
+  height: 30px;
   line-height: 35px;
   margin: 4px;
   overflow: hidden;
@@ -15805,8 +15805,8 @@ body[data-type="album_detail"] #page .page-title {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#album_detail .album-info .anzhiyufont.anzhiyu-icon-instagram {
-  margin-right: 8px;
+#album_detail .album-info .anzhiyufont.anzhiyu-icon-clock {
+  margin-right: 5px;
 }
 
 #album_detail .album-bottom {
@@ -15908,6 +15908,10 @@ body[data-type="album_detail"] #page .page-title {
 body[data-type="album_detail"] #page .author-content-item .card-content .banner-button-group .banner-button:hover {
   color: var(--anzhiyu-white);
   border-radius: 20px !important;
+}
+
+.banner-button-group .banner-button-text {
+  margin-right: 0.5rem;
 }
 
 /* 响应式 */
