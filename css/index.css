@@ -8454,7 +8454,8 @@ ul.menus_item_child {
 .back-home-button .back-menu-list-groups {
   position: absolute;
   top: 65px;
-  left: 0;
+  left: 20px;
+  width: 175px;
   background: var(--anzhiyu-card-bg);
   border-radius: 12px;
   border: var(--style-border);
@@ -8557,8 +8558,8 @@ ul.menus_item_child {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  margin: 4px 8px;
-  padding: 4px 8px !important;
+  margin: 4px 12px;
+  padding: 4px 0px !important;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -8582,6 +8583,7 @@ ul.menus_item_child {
   width: 24px;
   height: 24px;
   border-radius: 24px;
+  margin-left: 0.1rem;
   background: var(--anzhiyu-secondbg);
 }
 #page-header #nav .back-home-button {
